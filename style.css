@@ -1,17 +1,74 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico'); /*header*/
-@import url('https://fonts.googleapis.com/css?family=KoHo'); /*body*/
+@import url('https://fonts.googleapis.com/css?family=Oxygen'); /*body*/
 
 
 body {
-    font-family: 'KoHo', sans-serif;
-    color: #86a0a3;
-    background-color: #fff;
+    font-family: 'Oxygen', sans-serif;
+    color: #6B6B6B;
+    background-color: #fff6f6;
     /*background-image: url("iphone.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: contain;*/
     margin-top: 1em;
+}
+
+img {
+    width: inherit;
+    height: inherit;
+}
+
+#arrowDown {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #000;
+  position: relative;
+  left: 49%;
+  top: 4px;
+}
+
+#about {
+    max-width: 30vw;
+    width: 30vw;
+    height: auto;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+}
+
+#aboutText {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#detailAbout {
+    max-width: 28vw;
+    width: 28vw;
+    height: auto;
+    position: fixed;
+    top: 100px;
+    left: 40px;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+#detailAbout:hover {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#logo {
+    max-width: 30vw;
+    width: 30vw;
+    height: auto;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
 }
 
 #chatWidget {
@@ -22,6 +79,22 @@ body {
     max-width: 30vw;
     height: 2000px;
     width: 2000px;
+}
+
+#statsWidget {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    max-height: 85.5vh;
+    max-width: 30vw;
+    height: 2000px;
+    width: 2000px;
+    border: 2px solid gray;
+    border-left-color: #9A9A9A;
+    border-top-color: #9A9A9A;
+    border-right-color: #EEEEEE;
+    border-bottom-color: #EEEEEE;
+    padding: 10px;
 }
 
 h1, h2 {
@@ -36,12 +109,16 @@ h3 {
 
 a {
   transition: 0.3s;
-  color: #4eda61;
+  color: #ff5ce1;
 }
 
 a:hover {
   transition: 0.3s;
-  color: #4CAF50;
+  color: #ffa0ed;
+}
+
+b {
+  color: #FF5CA5;
 }
 
 #intro {
