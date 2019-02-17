@@ -1,4 +1,4 @@
-## empoWOMENt: Let’s break the glass ceiling!
+empoWOMENt: Let’s break the glass ceiling!
 =============
 
 Motivation
