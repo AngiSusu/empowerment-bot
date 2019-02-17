@@ -7,23 +7,7 @@
   </head>
   <body>
 
-          <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v3.2'
-          });
-        };
 
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
 
 
 
@@ -68,5 +52,23 @@
       </span>
       <iframe style="width: 100%; height: 40%;" frameborder="0" src="http://localhost:8000/en-US/embed?s=%2FservicesNS%2Ffrancineluo%2Fnlp-text-analytics%2Fsaved%2Fsearches%2FFrequently%2520Used%2520Words&oid=G3J8bfaFcyRNHPsnYs_CRft4dg_gGo4t5wtqv5z1mJYSTD9h3ynCAGUjVVzMKZ3B5wDPIOSJh4OmWY8VX6Lpy%5EWaiz05VHXTUoS7PIIDJKQ0YNJqdnnBST4R_3LC14qWmaQxLdrmcPVfgijuTnnlglz5Mshfh1jWAlTehCPJMR_bGgM3ti1Ak6F"></iframe>
     </div>-->
+
+              <!-- Load Facebook SDK for JavaScript -->
+              <div id="fb-root"></div>
+              <script>
+                window.fbAsyncInit = function() {
+                  FB.init({
+                    xfbml            : true,
+                    version          : 'v3.2'
+                  });
+                };
+
+                (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
   </body>
 </html>
