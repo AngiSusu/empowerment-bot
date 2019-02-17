@@ -7,7 +7,7 @@ Did you know that statistically, women apologize more often than men do? Accordi
 
 Women often downplay their successes and lose confidence for the sake of "being polite." And rather alarmingly, women who don't play by the rules are frequently labeled "bossy" or "conceited," whereas men would be labeled as "leaders." In an already incredibly underrepresented field, women in tech encounter obstacle after obstacle when trying to claim a seat at the table.
 
-EmPower is a messaging tool that not only detects phrases that show a lack of confidence, but also suggests alternative ways to express ideas. By dropping unnecessary apologies and using clear and direct language, women will become more comfortable, confident, and proud when sharing ideas. And by changing the way women think about themselves, we can break the glass ceiling! Achieving women's equality isn't easy, but it starts from the grassroots.
+EmPower is a messaging tool that not only detects phrases that show a lack of confidence but also suggests alternative ways to express ideas. By dropping unnecessary apologies and using clear and direct language, women will become more comfortable, confident, and proud when sharing ideas. And by changing the way women think about themselves, we can break the glass ceiling! Achieving women's equality isn't easy, but it starts from the grassroots.
 
 How it Works
 ------------
@@ -58,10 +58,10 @@ Technical Requirements
 >
 >**Instructions**
 >
->0. Our web demo is hosted at https://self-empowoment.net, courtesy of Domain.com.
->1. Connect with Em Power on Facebook (she can’t friend real users, though, so you’ll have to create a test user).
+>0. Our web demo is hosted at http://self-empowoment.net, courtesy of Domain.com.
+>1. Connect with EmPower on Facebook (she can’t friend real users, though, so you’ll have to create a test user).
 >2. Run empowoment.py.
->3. Start chatting with your new friend Em Power!
+>3. Start chatting with your new friend EmPower!
 >
 
 tl;dr
