@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>empowerbot</title> <!--css goes in the head-->
+    <title>empower</title>
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div id="logo">
-      <img src="empower.png">
+      <img src="empower.png" id="logo">
     </div>
     <div id="about">
       <div id="aboutText">
@@ -22,12 +22,20 @@
       <p><b>empower</b> is a messaging tool that detects phrases that show a lack of confidence and suggests alternative ways to express ideas. by dropping unnecessary apologies and using clear, direct language, women will become more comfortable, confident, and proud of sharing their ideas.</p>
     </div>
     <div id="chatWidget">
-      <iframe width="98%" height="98%" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/60cbf33a-c259-4df1-b229-66d87bf4a060"></iframe>
+      <iframe style="border: 1px solid black;" width="98%" height="98%" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/60cbf33a-c259-4df1-b229-66d87bf4a060"></iframe>
     </div>
     <div id="statsWidget">
-      <p>hello this is where statistics will go</p>
-      <p>we can analyze the positivity and negativity of your messages and show them in cool graphs and stuff!</p>
-      <p>plus a word cloud of your most commonly used words</p>
+      <span>
+        <b>sentiment</b><img src="question.png" class="question">
+        <div id="info">based on the past 24 hours</div>
+      </span>
+      <iframe style="width: 100%; height: 40%;" frameborder="0" src="http://localhost:8000/en-US/embed?s=%2FservicesNS%2Ffrancineluo%2Fnlp-text-analytics%2Fsaved%2Fsearches%2FSentiment&oid=qwmuYmYPF0Nirs5oQaQb14Qo2UzYTkm0hJRGPjQRp0OOHxzfbJCGTLMOhg1GWVDck3V7LmLsmRNVvK1JTF3%5EyGGXoNzR692hA7fyPbgPNjDTXNepemgWXF8awlobCguFSy2_11QEAhvDkooruZve2pE2orofA3N"></iframe>
+      <br></br>
+      <span>
+        <b>frequently used words</b><img src="question.png" class="question">
+        <div id="info" style="left:160px;">based on the past 24 hours</div>
+      </span>
+      <iframe style="width: 100%; height: 40%;" frameborder="0" src="http://localhost:8000/en-US/embed?s=%2FservicesNS%2Ffrancineluo%2Fnlp-text-analytics%2Fsaved%2Fsearches%2FFrequently%2520Used%2520Words&oid=G3J8bfaFcyRNHPsnYs_CRft4dg_gGo4t5wtqv5z1mJYSTD9h3ynCAGUjVVzMKZ3B5wDPIOSJh4OmWY8VX6Lpy%5EWaiz05VHXTUoS7PIIDJKQ0YNJqdnnBST4R_3LC14qWmaQxLdrmcPVfgijuTnnlglz5Mshfh1jWAlTehCPJMR_bGgM3ti1Ak6F"></iframe>
     </div>
   </body>
 </html>

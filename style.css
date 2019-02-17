@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Oxygen'); /*body*/
-
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
 
 body {
     font-family: 'Oxygen', sans-serif;
+    font-size: 15px;
     color: #6B6B6B;
     background-color: #fff6f6;
     /*background-image: url("iphone.jpg");
@@ -13,7 +13,27 @@ body {
     margin-top: 1em;
 }
 
-img {
+.question {
+    max-width: 14px;
+    max-height: 14px;
+    padding-left: 6px;
+}
+
+#info {
+    position: relative;
+    left: 76px;
+    top: -20px;
+    padding-left: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+#info:hover {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#logo {
     width: inherit;
     height: inherit;
 }
@@ -85,26 +105,12 @@ img {
     position: fixed;
     top: 30px;
     right: 30px;
-    max-height: 85.5vh;
+    max-height: 88.5vh;
     max-width: 30vw;
     height: 2000px;
     width: 2000px;
-    border: 2px solid gray;
-    border-left-color: #9A9A9A;
-    border-top-color: #9A9A9A;
-    border-right-color: #EEEEEE;
-    border-bottom-color: #EEEEEE;
-    padding: 10px;
-}
-
-h1, h2 {
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-}
-
-h3 {
-    color: rgb(78, 218, 97);
-    text-decoration: underline;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a {
@@ -119,13 +125,4 @@ a:hover {
 
 b {
   color: #FF5CA5;
-}
-
-#intro {
-    font-size: 5em;
-    text-align: center;
-}
-
-#title {
-    text-align: center;
 }
