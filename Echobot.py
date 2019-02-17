@@ -12,5 +12,5 @@ class EchoBot(Client):
         if author_id != self.uid:
             self.send(message_object, thread_id=thread_id, thread_type=thread_type)
 
-client = EchoBot("lkw_63@yahoo.com", "pearlhacks2019")
+client = Client("pandadude8@hotmail.com", "guacamole")
 client.listen()
