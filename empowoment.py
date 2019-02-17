@@ -6,8 +6,6 @@ import apiai
 import json
 import requests
 
-usersDictionary = {}
-
 thread_id = '2193282257398154'
 thread_type = ThreadType.GROUP
 
@@ -54,5 +52,5 @@ def callApiAI(self, message_object, client):
     reply = response['result']['fulfillment']['speech']
     return reply
 
-client = EmBot('white_lywkztc_rabbit@tfbnw.net', 'pearlhacks')
+client = EmBot('em_mpltrxe_power@tfbnw.net', 'pearlhacks')
 client.listen()
