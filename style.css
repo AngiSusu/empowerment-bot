@@ -8,6 +8,174 @@ body {
     margin-top: 1em;
 }
 
+a {
+    transition: 0.3s;
+    color: #ff5ce1;
+}
+
+a:hover {
+    transition: 0.3s;
+    color: #ffa0ed;
+}
+
+b {
+    color: #FF5CA5;
+}
+
+#logo {
+    max-width: 30vw;
+    width: 30vw;
+    height: auto;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: inherit;
+    height: inherit;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+            animation-fill-mode: forwards;
+}
+
+#arrowDown {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #000;
+    position: relative;
+    left: 49%;
+    top: 4px;
+    opacity: 0;
+    -webkit-animation: 1s linear 2s fadein; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: 1s linear 2s fadein; /* Firefox < 16 */
+        -ms-animation: 1s linear 2s fadein; /* Internet Explorer */
+         -o-animation: 1s linear 2s fadein; /* Opera < 12.1 */
+            animation: 1s linear 2s fadein;
+            animation-fill-mode: forwards;
+}
+
+#about {
+    max-width: 30vw;
+    width: 30vw;
+    height: auto;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    opacity: 0;
+    -webkit-animation: 1s linear 2s fadein; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: 1s linear 2s fadein; /* Firefox < 16 */
+        -ms-animation: 1s linear 2s fadein; /* Internet Explorer */
+         -o-animation: 1s linear 2s fadein; /* Opera < 12.1 */
+            animation: 1s linear 2s fadein;
+            animation-fill-mode: forwards;
+}
+
+#aboutText {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#detailAbout {
+    max-width: 28vw;
+    width: 28vw;
+    height: auto;
+    position: fixed;
+    top: 100px;
+    left: 40px;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+    opacity: 0;
+    -webkit-animation: 5s delayfade; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: 5s delayfade; /* Firefox < 16 */
+        -ms-animation: 5s delayfade; /* Internet Explorer */
+         -o-animation: 5s delayfade; /* Opera < 12.1 */
+            animation: 5s delayfade;
+}
+
+#detailAbout:hover {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#chatWidget {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 90vh;
+    max-width: 30vw;
+    height: 2000px;
+    width: 2000px;
+    opacity: 0;
+    -webkit-animation: 1s linear 2.8s fadein; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: 1s linear 2.8s fadein; /* Firefox < 16 */
+        -ms-animation: 1s linear 2.8s fadein; /* Internet Explorer */
+         -o-animation: 1s linear 2.8s fadein; /* Opera < 12.1 */
+            animation: 1s linear 2.8s fadein;
+            animation-fill-mode: forwards;
+}
+
+#statsWidget {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    max-height: 88.5vh;
+    max-width: 30vw;
+    height: 2000px;
+    width: 2000px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.question {
+    max-width: 14px;
+    max-height: 14px;
+    padding-left: 6px;
+}
+
+#info {
+    position: relative;
+    left: 76px;
+    top: -20px;
+    padding-left: 20px;
+    transition: 0.5s;
+    opacity: 0;
+    -webkit-animation: 5s delayfade; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: 5s delayfade; /* Firefox < 16 */
+        -ms-animation: 5s delayfade; /* Internet Explorer */
+         -o-animation: 5s delayfade; /* Opera < 12.1 */
+            animation: 5s delayfade;
+}
+
+#info:hover {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#sentimentWidget {
+    opacity: 0;
+    -webkit-animation: 1s linear 3.6s fadein; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: 1s linear 3.6s fadein; /* Firefox < 16 */
+        -ms-animation: 1s linear 3.6s fadein; /* Internet Explorer */
+         -o-animation: 1s linear 3.6s fadein; /* Opera < 12.1 */
+            animation: 1s linear 3.6s fadein;
+            animation-fill-mode: forwards;
+}
+
+#wordWidget {
+    opacity: 0;
+    -webkit-animation: 1s linear 4.4s fadein; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: 1s linear 4.4s fadein; /* Firefox < 16 */
+        -ms-animation: 1s linear 4.4s fadein; /* Internet Explorer */
+         -o-animation: 1s linear 4.4s fadein; /* Opera < 12.1 */
+            animation: 1s linear 4.4s fadein;
+            animation-fill-mode: forwards;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -64,176 +232,4 @@ body {
 @-o-keyframes delayfade {
     from { opacity: 0; }
     to   { opacity: 0; }
-}
-
-.question {
-    max-width: 14px;
-    max-height: 14px;
-    padding-left: 6px;
-}
-
-#info {
-    position: relative;
-    left: 76px;
-    top: -20px;
-    padding-left: 20px;
-    transition: 0.5s;
-    opacity: 0;
-    -webkit-animation: 5s delayfade; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: 5s delayfade; /* Firefox < 16 */
-        -ms-animation: 5s delayfade; /* Internet Explorer */
-         -o-animation: 5s delayfade; /* Opera < 12.1 */
-            animation: 5s delayfade;
-}
-
-#info:hover {
-    transition: 0.5s;
-    opacity: 1;
-}
-
-#logo {
-    transition: 2s;
-    width: inherit;
-    height: inherit;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-            animation-fill-mode: forwards;
-}
-
-#arrowDown {
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid #000;
-  position: relative;
-  left: 49%;
-  top: 4px;
-  opacity: 0;
-  -webkit-animation: 1s linear 2s fadein; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: 1s linear 2s fadein; /* Firefox < 16 */
-      -ms-animation: 1s linear 2s fadein; /* Internet Explorer */
-       -o-animation: 1s linear 2s fadein; /* Opera < 12.1 */
-          animation: 1s linear 2s fadein;
-          animation-fill-mode: forwards;
-}
-
-#about {
-    max-width: 30vw;
-    width: 30vw;
-    height: auto;
-    position: fixed;
-    top: 40px;
-    left: 40px;
-    opacity: 0;
-    -webkit-animation: 1s linear 2s fadein; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: 1s linear 2s fadein; /* Firefox < 16 */
-        -ms-animation: 1s linear 2s fadein; /* Internet Explorer */
-         -o-animation: 1s linear 2s fadein; /* Opera < 12.1 */
-            animation: 1s linear 2s fadein;
-            animation-fill-mode: forwards;
-}
-
-#aboutText {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    text-align: center;
-}
-
-#detailAbout {
-    max-width: 28vw;
-    width: 28vw;
-    height: auto;
-    position: fixed;
-    top: 100px;
-    left: 40px;
-    text-align: center;
-    padding: 10px;
-    transition: 0.5s;
-    opacity: 0;
-    -webkit-animation: 5s delayfade; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: 5s delayfade; /* Firefox < 16 */
-        -ms-animation: 5s delayfade; /* Internet Explorer */
-         -o-animation: 5s delayfade; /* Opera < 12.1 */
-            animation: 5s delayfade;
-}
-
-#detailAbout:hover {
-    transition: 0.5s;
-    opacity: 1;
-}
-
-#logo {
-    max-width: 30vw;
-    width: 30vw;
-    height: auto;
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-}
-
-#chatWidget {
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 90vh;
-    max-width: 30vw;
-    height: 2000px;
-    width: 2000px;
-    opacity: 0;
-    -webkit-animation: 1s linear 2.8s fadein; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: 1s linear 2.8s fadein; /* Firefox < 16 */
-        -ms-animation: 1s linear 2.8s fadein; /* Internet Explorer */
-         -o-animation: 1s linear 2.8s fadein; /* Opera < 12.1 */
-            animation: 1s linear 2.8s fadein;
-            animation-fill-mode: forwards;
-}
-
-#statsWidget {
-    position: fixed;
-    top: 30px;
-    right: 30px;
-    max-height: 88.5vh;
-    max-width: 30vw;
-    height: 2000px;
-    width: 2000px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#sentimentWidget {
-    opacity: 0;
-    -webkit-animation: 1s linear 3.6s fadein; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: 1s linear 3.6s fadein; /* Firefox < 16 */
-        -ms-animation: 1s linear 3.6s fadein; /* Internet Explorer */
-         -o-animation: 1s linear 3.6s fadein; /* Opera < 12.1 */
-            animation: 1s linear 3.6s fadein;
-            animation-fill-mode: forwards;
-}
-
-#wordWidget {
-    opacity: 0;
-    -webkit-animation: 1s linear 4.4s fadein; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: 1s linear 4.4s fadein; /* Firefox < 16 */
-        -ms-animation: 1s linear 4.4s fadein; /* Internet Explorer */
-         -o-animation: 1s linear 4.4s fadein; /* Opera < 12.1 */
-            animation: 1s linear 4.4s fadein;
-            animation-fill-mode: forwards;
-}
-
-a {
-  transition: 0.3s;
-  color: #ff5ce1;
-}
-
-a:hover {
-  transition: 0.3s;
-  color: #ffa0ed;
-}
-
-b {
-  color: #FF5CA5;
 }
