@@ -79,6 +79,11 @@ body {
     padding-left: 20px;
     transition: 0.5s;
     opacity: 0;
+    -webkit-animation: 5s delayfade; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: 5s delayfade; /* Firefox < 16 */
+        -ms-animation: 5s delayfade; /* Internet Explorer */
+         -o-animation: 5s delayfade; /* Opera < 12.1 */
+            animation: 5s delayfade;
 }
 
 #info:hover {
@@ -149,11 +154,11 @@ body {
     padding: 10px;
     transition: 0.5s;
     opacity: 0;
-    -webkit-animation: 3s delayfade; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: 3s delayfade; /* Firefox < 16 */
-        -ms-animation: 3s delayfade; /* Internet Explorer */
-         -o-animation: 3s delayfade; /* Opera < 12.1 */
-            animation: 3s delayfade;
+    -webkit-animation: 5s delayfade; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: 5s delayfade; /* Firefox < 16 */
+        -ms-animation: 5s delayfade; /* Internet Explorer */
+         -o-animation: 5s delayfade; /* Opera < 12.1 */
+            animation: 5s delayfade;
 }
 
 #detailAbout:hover {
